@@ -161,6 +161,7 @@ Resources:
                 Action:
                   - "logs:*"
                   - "ssm:GetParameter"
+                  - "ssm:PutParameter"
                   - "ssm:*"
                   - "secretsmanager:GetSecretValue"
                 Resource: "*"
