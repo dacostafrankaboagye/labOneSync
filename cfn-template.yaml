@@ -160,6 +160,9 @@ Resources:
               - Effect: "Allow"
                 Action:
                   - "logs:*"
+                  - "logs:CreateLogGroup"
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
                   - "ssm:*"
                   - "ssm:GetParameter"
                   - "ssm:PutParameter"
