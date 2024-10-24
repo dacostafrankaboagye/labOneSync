@@ -65,23 +65,23 @@ Resources:
         Password: !Sub "{{resolve:secretsmanager:${OneTP}::password}}"
         PasswordResetRequired: true
 
-  # Parameter Store to store user 1 email
-  jesseEmailParameter:
-    Type: "AWS::SSM::Parameter"
-    Properties:
-      Name: "/user/emails/jesse"
-      Type: String
-      Value: "jesse@example.com"
-      Description: "Email address for User 1"
+  # # Parameter Store to store user 1 email
+  # jesseEmailParameter:
+  #   Type: "AWS::SSM::Parameter"
+  #   Properties:
+  #     Name: "/user/emails/jesse"
+  #     Type: String
+  #     Value: "jesse@example.com"
+  #     Description: "Email address for User 1"
 
-  # Parameter Store to store user 2 email
-  jamesEmailParameter:
-    Type: "AWS::SSM::Parameter"
-    Properties:
-      Name: "/user/emails/james"
-      Type: String
-      Value: "james@example.com"
-      Description: "Email address for User 2"
+  # # Parameter Store to store user 2 email
+  # jamesEmailParameter:
+  #   Type: "AWS::SSM::Parameter"
+  #   Properties:
+  #     Name: "/user/emails/james"
+  #     Type: String
+  #     Value: "james@example.com"
+  #     Description: "Email address for User 2"
 
 
   # EventBridge Rule to detect new IAM user creation
