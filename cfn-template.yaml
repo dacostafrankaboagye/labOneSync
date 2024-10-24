@@ -134,6 +134,7 @@ Resources:
       Description: "Email address for adams"
 
 
+
   # EventBridge Rule to detect new IAM user creation
   UserCreationEventRule:
     Type: "AWS::Events::Rule"
