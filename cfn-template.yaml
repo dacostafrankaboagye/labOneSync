@@ -116,7 +116,7 @@ Resources:
       Description: "Email address for User 1"
   
     # Parameter Store to store blake
-  richardEmailParameter:
+  blakeEmailParameter:
     Type: "AWS::SSM::Parameter"
     Properties:
       Name: "/user/emails/blake"
