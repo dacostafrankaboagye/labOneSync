@@ -124,7 +124,7 @@ Resources:
       Value: "blake@example.com"
       Description: "Email address for blake"
 
-  # Parameter Store to store user 2 email
+  # Parameter Store
   adamsEmailParameter:
     Type: "AWS::SSM::Parameter"
     Properties:
