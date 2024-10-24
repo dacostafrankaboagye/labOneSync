@@ -160,9 +160,9 @@ Resources:
               - Effect: "Allow"
                 Action:
                   - "logs:*"
+                  - "ssm:*"
                   - "ssm:GetParameter"
                   - "ssm:PutParameter"
-                  - "ssm:*"
                   - "secretsmanager:GetSecretValue"
                 Resource: "*"
 
