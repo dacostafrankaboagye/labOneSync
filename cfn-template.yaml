@@ -131,7 +131,7 @@ Resources:
                   email = ssm.get_parameter(Name=email_param, WithDecryption=False)['Parameter']['Value']
                   print(f"User Email: {email}")
       Runtime: python3.12
-      Timeout: 
+      Timeout: 10
 
   LambdaInvokePermission:
     Type: "AWS::Lambda::Permission"
